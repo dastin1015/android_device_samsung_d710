@@ -28,6 +28,19 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 
+# Selinux
+BOARD_SEPOLICY_DIRS := \
+    device/samsung/d710/selinux
+
+BOARD_SEPOLICY_UNION := \
+    device.te \
+    domain.te \
+    file.te \
+    file_contexts \
+    init.te \
+    wimax.te \
+    wpa_supplicant.te
+
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
 
