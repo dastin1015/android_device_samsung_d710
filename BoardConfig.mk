@@ -37,9 +37,8 @@ BOARD_SEPOLICY_UNION := \
     domain.te \
     file.te \
     file_contexts \
-    init.te \
-    wimax.te \
-    wpa_supplicant.te
+    rild.te \
+    wimax.te
 
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
